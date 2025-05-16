@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main(){
-    int num,reversed=0,rem,original;
-    printf("enter the value of the number");
+    int num,remainder,reverced=0,original;
+    printf("enter the number intiger");
     scanf("%d",&num);
     original=num;
     while(num!=0){
-        rem=num%10;
-        reversed=reversed*10+rem;
+        remainder=num%10;
+        reverced=reverced*10+remainder;
         num/=10;
     }
-    if(reversed==original){
-        printf("entered number is palindrome\n");
+    if(reverced==original){
+        printf("%d is polindrome\n",original);
     }
     else{
-        printf("entered number is not palindrome\n");
+        printf("%d is not polindrome\n",original);
     }
     return 0;
 }
